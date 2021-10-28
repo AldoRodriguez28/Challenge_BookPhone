@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import react from 'react';
+import Layout from './components/Layout';
+import Card from './components/Card'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+ <react.Fragment  >
+   <Layout className="body-app" >
+     <Card>
+      <App />
+
+     </Card>
+   </Layout>
+ </react.Fragment>,
   document.getElementById('root')
 );
 
